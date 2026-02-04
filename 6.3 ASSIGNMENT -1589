@@ -1,0 +1,696 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN3NZ+lvFuvuGkwFZtIQ2d/",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/2303A51589/AICoding1589/blob/main/6.3%20ASSIGNMENT%20-1589\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "906edbed"
+      },
+      "source": [
+        "### Python Class Example\n",
+        "\n",
+        "Here's a basic Python class definition. You can use this as a starting point to explore how AI tools suggest methods, properties, or modifications to object-oriented structures.\n",
+        "\n",
+        "```python\n",
+        "class MyClass:\n",
+        "    def __init__(self, value):\n",
+        "        self.value = value\n",
+        "\n",
+        "    def get_value(self):\n",
+        "        return self.value\n",
+        "\n",
+        "# Example usage of the class\n",
+        "my_object = MyClass(10)\n",
+        "print(f\"The value of my_object is: {my_object.get_value()}\")\n",
+        "```"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "bcb3dab7"
+      },
+      "source": [
+        "### Python Loop Examples\n",
+        "\n",
+        "These examples demonstrate both `for` and `while` loops. You can experiment with AI tools to see how they suggest different loop constructs, iterators, or conditions for iterative tasks.\n",
+        "\n",
+        "```python\n",
+        "numbers = [1, 2, 3, 4, 5]\n",
+        "\n",
+        "print(\"Using a for loop:\")\n",
+        "for num in numbers:\n",
+        "    print(num)\n",
+        "\n",
+        "print(\"\\nUsing a while loop:\")\n",
+        "i = 0\n",
+        "while i < len(numbers):\n",
+        "    print(numbers[i])\n",
+        "    i += 1\n",
+        "```"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "eeccdcf5"
+      },
+      "source": [
+        "### Python Conditional Statement Example\n",
+        "\n",
+        "This code snippet illustrates an `if-elif-else` conditional structure. Use this to observe how AI tools generate or complete logical conditions and branching statements based on different scenarios.\n",
+        "\n",
+        "```python\n",
+        "x = 15\n",
+        "\n",
+        "if x > 20:\n",
+        "    print(\"x is greater than 20\")\n",
+        "elif x > 10:\n",
+        "    print(\"x is greater than 10 but not greater than 20\")\n",
+        "else:\n",
+        "    print(\"x is 10 or less\")\n",
+        "```"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "d14f57b7",
+        "outputId": "918ded71-e2af-4773-8210-a062d4bd7d1e"
+      },
+      "source": [
+        "class MyClass:\n",
+        "    def __init__(self, value):\n",
+        "        self.value = value\n",
+        "\n",
+        "    def get_value(self):\n",
+        "        return self.value\n",
+        "\n",
+        "# Example usage of the class\n",
+        "my_object = MyClass(10)\n",
+        "print(f\"The value of my_object is: {my_object.get_value()}\")"
+      ],
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "The value of my_object is: 10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "abe1ada3",
+        "outputId": "9ec45dcf-9e08-4cad-bf7f-1b1130969e08"
+      },
+      "source": [
+        "numbers = [1, 2, 3, 4, 5]\n",
+        "\n",
+        "print(\"Using a for loop:\")\n",
+        "for num in numbers:\n",
+        "    print(num)\n",
+        "\n",
+        "print(\"\\nUsing a while loop:\")\n",
+        "i = 0\n",
+        "while i < len(numbers):\n",
+        "    print(numbers[i])\n",
+        "    i += 1"
+      ],
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Using a for loop:\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n",
+            "\n",
+            "Using a while loop:\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "21d428cd",
+        "outputId": "f8df0553-d27e-4171-92eb-32937ec3bf7a"
+      },
+      "source": [
+        "x = 15\n",
+        "\n",
+        "if x > 20:\n",
+        "    print(\"x is greater than 20\")\n",
+        "elif x > 10:\n",
+        "    print(\"x is greater than 10 but not greater than 20\")\n",
+        "else:\n",
+        "    print(\"x is 10 or less\")"
+      ],
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "x is greater than 10 but not greater than 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# TASK- 1;\n"
+      ],
+      "metadata": {
+        "id": "v0RYMYYoJe8H"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "GqfO5e_eJw2H"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "f9386296"
+      },
+      "source": [
+        "### Task Description #1: Classes (Student Class)\n",
+        "\n",
+        "**Scenario**\n",
+        "You are developing a simple student information management module.\n",
+        "\n",
+        "**Task**\n",
+        "*   Create a `Student` class that includes attributes such as `name`, `roll_number`, and `branch`.\n",
+        "*   Add a method `display_details()` to print student information.\n",
+        "*   Execute the code and verify the output.\n",
+        "*   Analyze the code generated by the AI tool for correctness and clarity.\n",
+        "\n",
+        "**Expected Output #1**\n",
+        "*   A Python class with a constructor (`__init__`) and a `display_details()` method.\n",
+        "*   Sample object creation and output displayed on the console."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8868332e",
+        "outputId": "c166cfdc-7cff-441e-d495-e33fab61c617"
+      },
+      "source": [
+        "class Student:\n",
+        "    def __init__(self, name, roll_number, branch):\n",
+        "        self.name = name\n",
+        "        self.roll_number = roll_number\n",
+        "        self.branch = branch\n",
+        "\n",
+        "    def display_details(self):\n",
+        "        print(f\"Student Name: {self.name}\")\n",
+        "        print(f\"Roll Number: {self.roll_number}\")\n",
+        "        print(f\"Branch: {self.branch}\")\n",
+        "\n",
+        "# Example usage:\n",
+        "student1 = Student(\"Alice\", \"CS001\", \"Computer Science\")\n",
+        "student1.display_details()\n",
+        "\n",
+        "student2 = Student(\"Bob\", \"EE005\", \"Electrical Engineering\")\n",
+        "student2.display_details()"
+      ],
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Student Name: Alice\n",
+            "Roll Number: CS001\n",
+            "Branch: Computer Science\n",
+            "Student Name: Bob\n",
+            "Roll Number: EE005\n",
+            "Branch: Electrical Engineering\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "TASK-2"
+      ],
+      "metadata": {
+        "id": "0nSLS_luKCfF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "EUSEunRMKHCL"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "7e84d460"
+      },
+      "source": [
+        "### Task Description #2: Loops (Multiples of a Number)\n",
+        "\n",
+        "**Scenario**\n",
+        "You are writing a utility function to display multiples of a given number.\n",
+        "\n",
+        "**Task**\n",
+        "*   Prompt the AI tool to generate a function that prints the first 10 multiples of a given number using a loop.\n",
+        "*   Analyze the generated loop logic.\n",
+        "*   Ask the AI to generate the same functionality using another controlled looping structure (e.g., `while` instead of `for`).\n",
+        "\n",
+        "**Expected Output #2**\n",
+        "*   Correct loop-based Python implementation.\n",
+        "*   Output showing the first 10 multiples of a number.\n",
+        "*   Comparison and analysis of different looping approaches."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "e56924a9",
+        "outputId": "0e9a92d6-74f4-4726-811f-6cba793a8d9f"
+      },
+      "source": [
+        "def print_multiples_for_loop(number):\n",
+        "    print(f\"\\nMultiples of {number} (using for loop):\")\n",
+        "    for i in range(1, 11):  # First 10 multiples (1 to 10)\n",
+        "        print(number * i)\n",
+        "\n",
+        "def print_multiples_while_loop(number):\n",
+        "    print(f\"\\nMultiples of {number} (using while loop):\")\n",
+        "    count = 1\n",
+        "    while count <= 10:\n",
+        "        print(number * count)\n",
+        "        count += 1\n",
+        "\n",
+        "# Example usage:\n",
+        "print_multiples_for_loop(7)\n",
+        "print_multiples_while_loop(7)\n",
+        "\n",
+        "print_multiples_for_loop(3)\n",
+        "print_multiples_while_loop(3)"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "Multiples of 7 (using for loop):\n",
+            "7\n",
+            "14\n",
+            "21\n",
+            "28\n",
+            "35\n",
+            "42\n",
+            "49\n",
+            "56\n",
+            "63\n",
+            "70\n",
+            "\n",
+            "Multiples of 7 (using while loop):\n",
+            "7\n",
+            "14\n",
+            "21\n",
+            "28\n",
+            "35\n",
+            "42\n",
+            "49\n",
+            "56\n",
+            "63\n",
+            "70\n",
+            "\n",
+            "Multiples of 3 (using for loop):\n",
+            "3\n",
+            "6\n",
+            "9\n",
+            "12\n",
+            "15\n",
+            "18\n",
+            "21\n",
+            "24\n",
+            "27\n",
+            "30\n",
+            "\n",
+            "Multiples of 3 (using while loop):\n",
+            "3\n",
+            "6\n",
+            "9\n",
+            "12\n",
+            "15\n",
+            "18\n",
+            "21\n",
+            "24\n",
+            "27\n",
+            "30\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "TASK -3\n"
+      ],
+      "metadata": {
+        "id": "5cojJT7xKktQ"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "l0z19xZEKn9N"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "71842ce4"
+      },
+      "source": [
+        "### Task Description #3: Conditional Statements (Age Classification)\n",
+        "\n",
+        "**Scenario**\n",
+        "You are building a basic classification system based on age.\n",
+        "\n",
+        "**Task**\n",
+        "*   Ask the AI tool to generate nested `if-elif-else` conditional statements to classify age groups (e.g., child, teenager, adult, senior).\n",
+        "*   Analyze the generated conditions and logic.\n",
+        "*   Ask the AI to generate the same classification using alternative conditional structures (e.g., simplified conditions or dictionary-based logic).\n",
+        "\n",
+        "**Expected Output #3**\n",
+        "*   A Python function that classifies age into appropriate groups.\n",
+        "*   Clear and correct conditional logic.\n",
+        "*   Explanation of how the conditions work."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "70861314",
+        "outputId": "71cdcf7a-25b8-4193-a921-b60e505b4bc2"
+      },
+      "source": [
+        "def classify_age(age):\n",
+        "    if age < 0:\n",
+        "        return \"Invalid Age\"\n",
+        "    elif age <= 12:\n",
+        "        return \"Child\"\n",
+        "    elif age <= 19:\n",
+        "        return \"Teenager\"\n",
+        "    elif age <= 64:\n",
+        "        return \"Adult\"\n",
+        "    else:\n",
+        "        return \"Senior\"\n",
+        "\n",
+        "# Example usage:\n",
+        "print(f\"Age 5 is: {classify_age(5)}\")\n",
+        "print(f\"Age 15 is: {classify_age(15)}\")\n",
+        "print(f\"Age 30 is: {classify_age(30)}\")\n",
+        "print(f\"Age 70 is: {classify_age(70)}\")\n",
+        "print(f\"Age -2 is: {classify_age(-2)}\")"
+      ],
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Age 5 is: Child\n",
+            "Age 15 is: Teenager\n",
+            "Age 30 is: Adult\n",
+            "Age 70 is: Senior\n",
+            "Age -2 is: Invalid Age\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "TASK -4\n"
+      ],
+      "metadata": {
+        "id": "0aAPa9XALbzP"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "fc610354"
+      },
+      "source": [
+        "### Task Description #4: For and While Loops (Sum of First n Numbers)\n",
+        "\n",
+        "**Scenario**\n",
+        "You need to calculate the sum of the first `n` natural numbers.\n",
+        "\n",
+        "**Task**\n",
+        "*   Use AI assistance to generate a `sum_to_n()` function using a `for` loop.\n",
+        "*   Analyze the generated code.\n",
+        "*   Ask the AI to suggest an alternative implementation using a `while` loop or a mathematical formula.\n",
+        "\n",
+        "**Expected Output #4**\n",
+        "*   Python function to compute the sum of first `n` numbers.\n",
+        "*   Correct output for sample inputs.\n",
+        "*   Explanation and comparison of different approaches."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ef4468ab",
+        "outputId": "7dfc8212-0d05-4071-e299-3b2de37c88bb"
+      },
+      "source": [
+        "def sum_to_n_for_loop(n):\n",
+        "    \"\"\"Calculates the sum of the first n natural numbers using a for loop.\"\"\"\n",
+        "    if n < 0:\n",
+        "        return \"Input must be a non-negative integer\"\n",
+        "    total_sum = 0\n",
+        "    for i in range(1, n + 1):\n",
+        "        total_sum += i\n",
+        "    return total_sum\n",
+        "\n",
+        "def sum_to_n_while_loop(n):\n",
+        "    \"\"\"Calculates the sum of the first n natural numbers using a while loop.\"\"\"\n",
+        "    if n < 0:\n",
+        "        return \"Input must be a non-negative integer\"\n",
+        "    total_sum = 0\n",
+        "    count = 1\n",
+        "    while count <= n:\n",
+        "        total_sum += count\n",
+        "        count += 1\n",
+        "    return total_sum\n",
+        "\n",
+        "def sum_to_n_formula(n):\n",
+        "    \"\"\"Calculates the sum of the first n natural numbers using a mathematical formula.\"\"\"\n",
+        "    if n < 0:\n",
+        "        return \"Input must be a non-negative integer\"\n",
+        "    return n * (n + 1) // 2\n",
+        "\n",
+        "# Example usage:\n",
+        "n_value = 10\n",
+        "print(f\"Sum of first {n_value} numbers (for loop): {sum_to_n_for_loop(n_value)}\")\n",
+        "print(f\"Sum of first {n_value} numbers (while loop): {sum_to_n_while_loop(n_value)}\")\n",
+        "print(f\"Sum of first {n_value} numbers (formula): {sum_to_n_formula(n_value)}\")\n",
+        "\n",
+        "n_value_negative = -5\n",
+        "print(f\"Sum of first {n_value_negative} numbers (for loop): {sum_to_n_for_loop(n_value_negative)}\")"
+      ],
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Sum of first 10 numbers (for loop): 55\n",
+            "Sum of first 10 numbers (while loop): 55\n",
+            "Sum of first 10 numbers (formula): 55\n",
+            "Sum of first -5 numbers (for loop): Input must be a non-negative integer\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "TASK -5\n"
+      ],
+      "metadata": {
+        "id": "fypkyuY6MRie"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "class BankAccount:\n",
+        "    def __init__(self, account_holder, initial_balance=0):\n",
+        "        # Initialize a new bank account.\n",
+        "        # account_holder: The name of the account owner.\n",
+        "        # initial_balance: The starting balance of the account (default to 0).\n",
+        "        self.account_holder = account_holder\n",
+        "        self.balance = initial_balance\n",
+        "        print(f\"Account created for {self.account_holder} with initial balance: ${self.balance:.2f}\")\n",
+        "\n",
+        "    def deposit(self, amount):\n",
+        "        # Deposits money into the account.\n",
+        "        # amount: The amount of money to deposit.\n",
+        "        if amount > 0:\n",
+        "            self.balance += amount\n",
+        "            print(f\"Deposited: ${amount:.2f}. New balance: ${self.balance:.2f}\")\n",
+        "        else:\n",
+        "            print(\"Deposit amount must be positive.\")\n",
+        "\n",
+        "    def withdraw(self, amount):\n",
+        "        # Withdraws money from the account.\n",
+        "        # amount: The amount of money to withdraw.\n",
+        "        if amount > 0:\n",
+        "            if self.balance >= amount:\n",
+        "                self.balance -= amount\n",
+        "                print(f\"Withdrew: ${amount:.2f}. New balance: ${self.balance:.2f}\")\n",
+        "            else:\n",
+        "                print(\"Insufficient funds.\")\n",
+        "        else:\n",
+        "            print(\"Withdrawal amount must be positive.\")\n",
+        "\n",
+        "    def check_balance(self):\n",
+        "        # Displays the current balance of the account.\n",
+        "        print(f\"Account holder: {self.account_holder}, Current balance: ${self.balance:.2f}\")\n",
+        "\n",
+        "# Example usage of the BankAccount class:\n",
+        "print(\"\\n--- Creating and managing accounts ---\")\n",
+        "my_account = BankAccount(\"Alice Smith\", 100.00)\n",
+        "my_account.check_balance()\n",
+        "\n",
+        "my_account.deposit(50.50)\n",
+        "my_account.withdraw(30.00)\n",
+        "my_account.check_balance()\n",
+        "\n",
+        "print(\"\\n--- Testing edge cases ---\")\n",
+        "my_account.withdraw(200.00) # Attempt to overdraw\n",
+        "my_account.deposit(-10.00) # Attempt to deposit negative amount\n",
+        "my_account.check_balance()\n",
+        "\n",
+        "another_account = BankAccount(\"Bob Johnson\")\n",
+        "another_account.deposit(500.00)\n",
+        "another_account.check_balance()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Qs5UDve-MUD8",
+        "outputId": "c43d4a50-424e-45f0-b1f5-2b780fdbd462"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\n",
+            "--- Creating and managing accounts ---\n",
+            "Account created for Alice Smith with initial balance: $100.00\n",
+            "Account holder: Alice Smith, Current balance: $100.00\n",
+            "Deposited: $50.50. New balance: $150.50\n",
+            "Withdrew: $30.00. New balance: $120.50\n",
+            "Account holder: Alice Smith, Current balance: $120.50\n",
+            "\n",
+            "--- Testing edge cases ---\n",
+            "Insufficient funds.\n",
+            "Deposit amount must be positive.\n",
+            "Account holder: Alice Smith, Current balance: $120.50\n",
+            "Account created for Bob Johnson with initial balance: $0.00\n",
+            "Deposited: $500.00. New balance: $500.00\n",
+            "Account holder: Bob Johnson, Current balance: $500.00\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "mvGd8IL0LegA"
+      }
+    }
+  ]
+}
